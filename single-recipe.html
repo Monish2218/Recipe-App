@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Recipe | Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #ci-container {
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            margin-top: 120px;
+            justify-content: space-around;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: auto;
+            row-gap: 2em;
+        }
+        
+        header {
+            top: 0px;
+        }
+        
+        #instructions {
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="heading-1">
+            <a href="/">Recipe App</a>
+        </h1>
+    </header>
+    <main>
+        <div class="card-ingredients" id="ci-container">
+            <div class="card recipe-card" id="single-card-container"></div>
+            <div class="ingredients" id="ingredients">
+
+            </div>
+        </div>
+        <div class="instructions" id="instructions"></div>
+    </main>
+    <script type="module" src="single-recipe.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
